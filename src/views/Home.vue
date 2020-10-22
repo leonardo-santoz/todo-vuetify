@@ -1,18 +1,41 @@
 <template>
-<div class="home">
+<div class="home pl-10 pr-10">
     <h1>Homepage</h1>
-    <p class="red white--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi voluptate dignissimos inventore ad eligendi earum, ducimus vel nemo vero assumenda ex? Sequi velit aliquid quisquam nesciunt, quibusdam nihil tenetur delectus!</p>
-    <p class="deep-purple lighten-3 red--text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam illum officia atque vel odit, cumque voluptas ullam culpa, corporis commodi ducimus eum voluptates. Soluta sapiente itaque vero optio impedit ut!</p>
-    <h1 class="display-4 text-uppercase">Massive display</h1>
-    <h4 class="display-1">Smaller Display</h4>
-    <p class="headline">This is a headline</p>
-    <p class="subheading font-weight-bold">This is a subheading</p>
-    <p class="caption font-weight-light">This is a caption</p>
+    <div class="d-flex justify-space-between">
+        <v-btn class="purple white--text">Click me</v-btn>
+        <v-btn depress dark color="purple">Click me</v-btn>
+        <v-btn flat>Click me</v-btn>
+
+        <v-btn depressed class="pink white--text">
+            <v-icon> mdi-account gram </v-icon>
+            <span>Conta</span>
+        </v-btn>
+
+        <v-btn depressed small class="pink white--text">
+            <v-icon> mdi-account gram </v-icon>
+            <span>Conta</span>
+        </v-btn>
+
+        <v-btn depressed large class="pink white--text">
+            <span>Conta</span>
+            <v-icon> mdi-account gram </v-icon>
+        </v-btn>
+
+        <v-btn depressed fab small dark class="pink white--text">
+            <v-icon>mdi-bell-ring</v-icon>
+        </v-btn>
+
+        <v-btn depressed fab medium dark class="pink white--text">
+            <v-icon>mdi-bell-ring</v-icon>
+        </v-btn>
+
+        <v-btn depressed fab medium dark class="blue white--text">
+            <v-icon large>mdi-plus</v-icon>
+        </v-btn>
+    </div>
 </div>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
